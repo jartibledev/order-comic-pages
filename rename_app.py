@@ -14,6 +14,7 @@ def change_name (old_name : str,
 
     new_file = new_name + f"_{number}.txt"
     print(new_file)
+
     # Renombrar el archivo
     os.rename(old_file, new_file)
 
@@ -21,8 +22,8 @@ def iterator_files( folder_path, name_file:str):
     
 
     # Definir la carpeta
-    #folder = Path(r'C:\Users\Usuario\Desktop\projects\projects_dev\dev\projects\rename_in_order\pruebas')
-    folder = Path(folder_path)
+    folder = Path(r'C:\Users\Usuario\Desktop\projects\projects_dev\dev\projects\rename_in_order\pruebas')
+    #folder = Path(folder_path)
     print  (folder)
     # Iterar sobre todos los archivos (sin incluir subcarpetas)
     for file_path in folder.iterdir():
@@ -68,7 +69,7 @@ frame = tk.Frame(root, padx=10, pady=10)
 frame.pack()
 
 textvariable = tk.StringVar() 
-textvariable.set("Select name folder")
+textvariable.set("Untitle")
 
 entry = ttk.Entry(master=frame,textvariable=textvariable)
 entry.pack(side=tk.LEFT)
