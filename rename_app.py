@@ -17,7 +17,6 @@ def iterator_files( folder_path, name_file:str):
             new_file_path = file_path.with_name(f"{name_file}{count}{file_path.suffix}")
             file_path.rename(new_file_path)
            
-
 def get_folder():
     path_folder = filedialog.askdirectory(
     title="Select your folder"
@@ -31,19 +30,13 @@ def wrap():
     folder_path = get_folder()
     iterator_files(folder_path=folder_path, name_file=name)
 
-
-
-
-
-
-
 root = tk.Tk()
 root.geometry("400x400")
 frame = tk.Frame(root, padx=10, pady=10)
 frame.pack()
 
 textvariable = tk.StringVar() 
-textvariable.set("Untitle")
+textvariable.set("Untitled")
 
 entry = ttk.Entry(master=frame,textvariable=textvariable)
 entry.pack(side=tk.LEFT)
