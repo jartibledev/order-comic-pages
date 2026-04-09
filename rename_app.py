@@ -9,10 +9,12 @@ import tkinter as tk
 def iterator_files( folder_path, name_file:str):
     folder = Path(folder_path)
     count = 0
+    
     for file_path in folder.iterdir():
         if file_path.is_file():  
             count += 1
-            new_file_path = file_path.with_name(f"{name_file}{count}.txt")
+            
+            new_file_path = file_path.with_name(f"{name_file}{count}{file_path.suffix}")
             file_path.rename(new_file_path)
            
 
@@ -28,6 +30,7 @@ def wrap():
     name = entry.get()
     folder_path = get_folder()
     iterator_files(folder_path=folder_path, name_file=name)
+
 
 
 
