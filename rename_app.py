@@ -1,8 +1,9 @@
 
 from pathlib import Path
 from tkinter import filedialog
-from tkinter import ttk
+
 import tkinter as tk
+import customtkinter as ctk
 
 
 
@@ -86,28 +87,36 @@ def evens():
     folder_path = get_folder()
     iterator_files_all_evens(folder_path=folder_path, name_file=name)
 
-root = tk.Tk()
+root = ctk.CTk()
 root.geometry("800x400")
-frame = tk.Frame(root, padx=10, pady=10)
+
+ctk.set_appearance_mode("dark")
+
+frame = ctk.CTkFrame(root)
 frame.pack()
 
-textvariable = tk.StringVar() 
+
+label_entry = ctk.CTkLabel(master = frame, text= "Write the new name of your files")
+label_entry.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
+textvariable = ctk.StringVar() 
 textvariable.set("Untitled")
-
-entry = ttk.Entry(master=frame,textvariable=textvariable)
-entry.pack(side=tk.LEFT)
-
-button= ttk.Button(master=frame ,text="Select your folder", command=get_folder)
-button.pack(side=tk.LEFT, padx=5)
+entry = ctk.CTkEntry(master=frame,textvariable=textvariable)
+entry.grid(row=1, column=0, padx=10, pady=10, sticky="ew")
 
 
-button2= ttk.Button(master=frame ,text="Change names", command = wrap )
-button2.pack(side=tk.LEFT, padx=5)
+label_entry = ctk.CTkLabel(master = frame, text= "Rename your files")
+label_entry.grid(row=0, column=1, padx=10, pady=10, sticky="ew")
+button2= ctk.CTkButton(master=frame ,text="Change names", command = wrap, hover_color="#8d8d8d", fg_color= "#3B3B3B" )
+button2.grid(row=1, column=1, padx=10, pady=10, sticky="ew")
 
-button_odd= ttk.Button(master=frame ,text="All odds", command = odd  )
-button_odd.pack(side=tk.LEFT, padx=5) 
+label_entry = ctk.CTkLabel(master = frame, text= "Select the order of your elements")
+label_entry.grid(row=0, column=2, padx=10, pady=10, sticky="ew")
 
-button_evens= ttk.Button(master=frame ,text="All evens", command = evens  )
-button_evens.pack(side=tk.LEFT, padx=5) 
+button_odd= ctk.CTkButton(master=frame ,text="All odds",  hover_color="#8d8d8d", fg_color= "#3B3B3B", command = odd  )
+button_odd.grid(row=1, column=2, padx=10, pady=10, sticky="ew")
+
+
+button_evens= ctk.CTkButton(master=frame ,text="All evens", command = evens, hover_color="#8d8d8d", fg_color= "#3B3B3B"  )
+button_evens.grid(row=2, column=2, padx=10, pady=10, sticky="ew") 
 
 root.mainloop()
