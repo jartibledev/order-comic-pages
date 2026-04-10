@@ -1,1 +1,2 @@
-Script de oredenar páginas de cómic
+# Reorder comic pages
+
