@@ -51,7 +51,7 @@ or download the zip.
 > Don´t use this plugin in directories as Desktop and Users. Only in folders that you are created for your projects.
 
 ## About the author 
-
+If you want know more about me, take a look to my [profile](https://github.com/jartibledev).
 
 
 
