@@ -1,3 +1,5 @@
+>[!CAUTION]
+> This project is in process of developing, please be carefull when you will use it.
 
 >## Automatization
 <!-- Image Cover -->
@@ -33,18 +35,20 @@
 
 
 <!-- Instructions -->
-## How to install app
+## How to install plugin
 You can download this plugin with the folowing command:
 ```
-git clone 
+git clone https://github.com/jartibledev/order-comic-pages.git 
 ```
+or download the zip.
 
-To use this plugin only you need to open the file .exe into the folder "dist".
+### To use this plugin only you need to open the file .exe into the folder "dist".
 
 
 
 ## Issues
-
+>[!WARNING]
+> Don´t use this plugin in directories as Desktop and Users. Only in folders that you are created for your projects.
 
 ## About the author 
 
