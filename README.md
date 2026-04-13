@@ -26,7 +26,7 @@ Body :El reconocido experto de software Robert C. Martin, junto con sus colegas 
 ## Functions
 | | |
 |:---:| :---: |
-| ![gif](gifs/rename_clips_1.gif) | ![gif](gifs/rename_clips_2.gif) |
+|  <img src="gifs/rename_clips_2.gif" width="100"> | ![gif](gifs/rename_clips_3.gif) |
 | meme function | also meme function |
 
 <!-- Instructions -->
