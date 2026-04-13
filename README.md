@@ -15,23 +15,23 @@
 
 <!-- Index -->
 ## Index
-[How to use the app](#functions) <br/>
-[How to install app](#how-to-install-app) <br/>
+[How to use the plugin](#functions) <br/>
+[How to install plugin](#how-to-install-app) <br/>
 [Issues](#issues) <br/>
 
 ## Usage 
 | | |
 |:---:| :---: |
 |  <img src="gifs/rename_clips_1.gif" width="450"> | <img src="gifs/rename_clips_4.gif" width="450"> |
-| Write your name for all pages |  Select in "change names" to select the folder |
+| Write your name for all pages |  Click in "change names" to select the folder |
 | <img src="gifs/rename_clips_2.gif" width="450"> |  <img src="gifs/rename_clips_3.gif" width="450"> |
-| Select the folder where is the files which you want to rename | Your files are renamed |
+| Select the folder where are the files that you want to rename | Your files are renamed |
 
 ## Functions
 | | |
 |:---:| :---: |
 |  <img src="gifs/rename_clips_5.gif" width="450"> | <img src="gifs/rename_clips_6.gif" width="450"> |
-| **Odds:** The number's files is renamed only in odds numbers |  **Evens:** The number's files is renamed only in evens numbers |
+| **Odds:** The files are renamed only in odd numbers |  **Evens:** The files are renamed only in even numbers |
 
 
 <!-- Instructions -->
